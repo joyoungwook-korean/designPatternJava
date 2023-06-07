@@ -14,7 +14,6 @@ public class MultiThread {
 class Thread1 implements Runnable {
     @Override
     public void run() {
-        // TODO Auto-generated method stub
         Singleton singleton = Singleton.getInstance("FOO");
         System.out.println(singleton.value);
     }
@@ -23,7 +22,6 @@ class Thread1 implements Runnable {
 class Thread2 implements Runnable {
     @Override
     public void run() {
-        // TODO Auto-generated method stub
         Singleton singleton = Singleton.getInstance("BAR");
         System.out.println(singleton.value);
     }
